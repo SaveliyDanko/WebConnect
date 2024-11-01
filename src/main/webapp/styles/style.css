@@ -1,0 +1,18 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+body.light-theme {
+    background-image: url("../resources/light-wallpaper.jpg");
+}
+
+body.dark-theme {
+    background-image: url("../resources/dark-wallpaper.jpg");
+}
+
+

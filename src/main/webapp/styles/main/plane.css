@@ -1,0 +1,28 @@
+.plane {
+    grid-column: 5 / 9; /* Столбцы с 5 по 8 */
+    grid-row: 1 / 9;    /* Строки с 1 по 8 */
+}
+
+.plane {
+    grid-column: 5 / 9;
+    grid-row: 1 / 9;
+    /* Удалите временный фон, если он больше не нужен */
+    /* background-color: rgba(0, 0, 255, 0.2); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.coordinate-plane {
+    position: relative;
+    width: 80%;
+    max-width: 500px;
+    aspect-ratio: 1 / 1; /* Сохраняет квадратную форму */
+    background-color: #fff;
+    border: 1px solid #000;
+}
+
+.coordinate-plane canvas {
+    width: 100%;
+    height: 100%;
+}

@@ -1,0 +1,46 @@
+.form {
+    grid-column: 1 / 5;
+    grid-row: 1 / 5;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    overflow-y: auto;
+}
+
+/* Стилизация формы */
+#user-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#user-form fieldset {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+#user-form legend {
+    font-weight: bold;
+}
+
+#user-form label {
+    margin-bottom: 5px;
+}
+
+#user-form input[type="text"] {
+    padding: 5px;
+    margin-bottom: 15px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#user-form button[type="submit"] {
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#user-form button[type="submit"]:hover {
+    background-color: #555;
+}
