@@ -1,50 +1,48 @@
 .table {
-    grid-column: 1 / 5; /* Столбцы с 1 по 4 */
-    grid-row: 5 / 9;    /* Строки с 5 по 8 */
-    /* Временный стиль для визуализации */
+    grid-column: 1 / 5; /* Columns from 1 to 4 */
+    grid-row: 5 / 9;    /* Rows from 5 to 8 */
+    /* Temporary style for visualization */
     background-color: rgba(0, 255, 0, 0.2);
 
-    max-height: 300px; /* Устанавливаем максимальную высоту таблицы */
-    overflow-y: auto;  /* Включаем вертикальную прокрутку при переполнении */
+    max-height: 300px; /* Set maximum table height */
+    overflow-y: auto;  /* Enable vertical scroll on overflow */
     margin-top: 20px;
     border: 1px solid #ddd;
     border-radius: 5px;
 }
 
-
-/* Стили таблицы */
+/* Table styles */
 #result-table {
     width: 100%;
     border-collapse: collapse;
-    table-layout: fixed; /* Фиксированная ширина столбцов */
+    table-layout: fixed; /* Fixed column width */
 }
 
 #result-table th, #result-table td {
     border: 1px solid #ddd;
     padding: 10px;
     text-align: center;
-    word-wrap: break-word; /* Перенос слов для длинного текста */
+    word-wrap: break-word; /* Word wrap for long text */
 }
 
 #result-table th {
-    background-color: #4CAF50; /* Зеленый фон для заголовка */
+    background-color: #4CAF50; /* Green background for header */
     color: white;
-    position: sticky; /* Фиксируем заголовок таблицы при прокрутке */
+    position: sticky; /* Fix header position on scroll */
     top: 0;
 }
 
 #result-table tr:nth-child(even) {
-    background-color: #f9f9f9; /* Светлый фон для четных строк */
+    background-color: #f9f9f9; /* Light background for even rows */
 }
 
 #result-table tr:hover {
-    background-color: #f1f1f1; /* Подсветка строки при наведении */
+    background-color: #f1f1f1; /* Highlight row on hover */
 }
 
-/* Адаптивность для мобильных устройств */
+/* Mobile responsiveness */
 @media screen and (max-width: 600px) {
     #result-table th, #result-table td {
         padding: 8px;
     }
 }
-

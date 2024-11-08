@@ -1,13 +1,11 @@
-// update-table.js
-
-// Функция для обновления таблицы с результатами
+// Function to update the results table
 function updateTable(data) {
     let tableDiv = document.querySelector('.table');
 
-    // Проверяем, существует ли таблица
+    // Check if the table exists
     let table = document.getElementById('result-table');
     if (!table) {
-        // Создаем таблицу и заголовок
+        // Create the table and header
         table = document.createElement('table');
         table.id = 'result-table';
         table.innerHTML = `
@@ -16,7 +14,7 @@ function updateTable(data) {
                     <th>X</th>
                     <th>Y</th>
                     <th>R</th>
-                    <th>Результат</th>
+                    <th>Result</th>
                 </tr>
             </thead>
             <tbody id="table-body">
@@ -25,7 +23,7 @@ function updateTable(data) {
         tableDiv.appendChild(table);
     }
 
-    // Добавляем новую строку с данными
+    // Add a new row with data
     const tbody = document.getElementById('table-body');
     const newRow = document.createElement('tr');
 

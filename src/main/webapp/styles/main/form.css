@@ -44,3 +44,24 @@
 #user-form button[type="submit"]:hover {
     background-color: #555;
 }
+
+/* button-styles.css */
+
+.button-link {
+    display: inline-block;
+    padding: 8px 16px;
+    margin-top: 10px;
+    text-decoration: none;
+    color: white;
+    background-color: #007BFF; /* Цвет фона кнопки */
+    border-radius: 5px; /* Скругленные углы */
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.button-link:hover {
+    background-color: #0056b3; /* Более темный фон при наведении */
+    color: white;
+}

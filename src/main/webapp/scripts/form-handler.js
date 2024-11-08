@@ -31,24 +31,19 @@ function handleFormSubmit(event) {
     params.append('y', yValue);
     params.append('r', rValue);
 
-    // Отправка AJAX-запроса
-    fetch('http://localhost:8080/SavaDanko/receive?' + params.toString(), {
+    // Отправляем AJAX-запрос
+    fetch(contextPath + '/receive?' + params.toString(), {
         method: 'GET',
+        credentials: 'include', // Добавлено
     })
     .then(response => response.json())
     .then(data => {
-        // Обработка JSON-ответа от сервера
-        console.log('Ответ от сервера:', data);
-        // Обновляем таблицу с результатами
+        // Обрабатываем ответ от сервера
+        console.log('Server response:', data);
+        // Обновляем таблицу результатов
         updateTable(data);
     })
     .catch(error => {
-        console.error('Ошибка:', error);
+        console.error('Error:', error);
     });
 }
-
-// Добавляем обработчик события на форму после загрузки страницы
-document.addEventListener('DOMContentLoaded', function() {
-    const form = document.getElementById('user-form');
-    form.addEventListener('submit', handleFormSubmit);
-});
